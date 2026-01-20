@@ -6,6 +6,7 @@
     background-color: #333;
     border-radius: 30px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .options-btn {
@@ -19,6 +20,7 @@
     transition: 0.3s ease;
     flex-shrink: 0;
     display: flex;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
 }
@@ -46,6 +48,7 @@
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    font-size: 20px;
     justify-content: center;
 }
 

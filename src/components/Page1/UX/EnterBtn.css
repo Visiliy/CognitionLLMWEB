@@ -11,6 +11,15 @@
     margin-right: 20px;
   }
   
-  .enter-btn:hover {
+.enter-btn:hover {
     cursor: pointer;
-  }
+    transform: scale(0.95);
+}
+
+@media (max-width: 464px) {
+    .enter-btn:hover {
+        cursor: pointer;
+        transform: scale(1);
+    }
+}
+

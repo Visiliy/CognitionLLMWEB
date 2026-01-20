@@ -4,10 +4,16 @@ import ChatInput from "./JS/ChatInput.jsx";
 import Head from "./JS/Head.jsx";
 import "./Page1.css";
 import Modes from './JS/Modes.jsx';
+import Options from './JS/Options.jsx';
 
 const Page1 = () => {
     const datacloud = new DataCloud();
     const [isMobile, setIsMobile] = useState(false);
+    const [isOptions, setIsOptions] = useState(false);
+
+    const openOptions = () => {
+        setIsOptions(!isOptions);
+    }
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 1068);
@@ -45,7 +51,10 @@ const Page1 = () => {
             <div className="chat-wrapper">
                 <div className='chat-block' style={divStyles}>
                     <p className='main-text'>Точность и информативность превыше всего</p>
-                    <ChatInput style={inputStyle}/>
+                    {
+                        isOptions && <Options />
+                    }
+                    <ChatInput style={inputStyle} openOptions={openOptions}/>
                     <Modes modes={datacloud.modes_array}/>
                 </div>
                 

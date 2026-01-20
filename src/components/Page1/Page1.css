@@ -1,6 +1,4 @@
 .chat-wrapper {
-    display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 90% 10%;
 }

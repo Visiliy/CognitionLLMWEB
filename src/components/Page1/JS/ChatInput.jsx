@@ -1,9 +1,14 @@
 import "../UX/ChatInput.css";
 
-const ChatInput = () => {
+const ChatInput = ({ style }) => {
     return (
-        <div className="chat-input-wrapper">
-            <input className="chat-input" />
+        <div className="chat-input-wrapper" style={style}>
+            <button className="options-btn">+</button>
+            <input 
+                className="chat-input" 
+                placeholder="Задай любой вопрос..."
+            />
+            <button className="send-btn">↑</button>
         </div>
     );
 }

@@ -10,12 +10,17 @@
 .mode-card {
     padding: 10px;
     border-radius: 20px;
-    border: 2px solid #555;
+    border: 1px solid #555;
     color: white;
-    background-color: #333;
+    background: url("src/assets/e14968ec-22c0-4b7b-8715-9fdc17729834.png");
     user-select: none;
     max-width: 200px;
     cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.mode-card:hover {
+    transform: scale(1.1);
 }
 
 .mode-name {

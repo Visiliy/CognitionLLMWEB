@@ -28,7 +28,7 @@ const Page1 = () => {
 
     const divStyles = {
         position: "absolute",
-        width: isMobile ? "90%" : "40%",
+        width: isMobile ? "90%" : "50%",
         top: "60%",
         left: "50%",
         transform: "translate(-50%, -50%)",

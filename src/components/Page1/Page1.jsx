@@ -5,6 +5,7 @@ import Head from "./JS/Head.jsx";
 import "./Page1.css";
 import Modes from './JS/Modes.jsx';
 import Options from './JS/Options.jsx';
+import SecondaryChat from './JS/SecondaryChat.jsx';
 
 const Page1 = () => {
     const datacloud = new DataCloud();
@@ -28,7 +29,7 @@ const Page1 = () => {
         backgroundColor: "#333",
         border: "1px solid #555",
         padding: "12px 16px",
-        height: "54px",
+        height: "fit-content",
         width: "100%",
     };
 
@@ -57,7 +58,7 @@ const Page1 = () => {
                     <ChatInput style={inputStyle} openOptions={openOptions}/>
                     <Modes modes={datacloud.modes_array}/>
                 </div>
-                
+                <SecondaryChat />
             </div>
         </>
     );

@@ -1,0 +1,13 @@
+.secondary-chat-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.secondary-chat-burger {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

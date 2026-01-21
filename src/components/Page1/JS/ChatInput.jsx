@@ -37,6 +37,13 @@ const ChatInput = ({ style, openOptions }) => {
         }
     }, [value, isLongText]);
 
+    useEffect(() => {
+        if (isLongText && textareaRef.current) {
+            textareaRef.current.style.height = 'auto';
+            textareaRef.current.style.height = `${Math.min(textareaRef.current.scrollHeight, 150)}px`;
+        }
+    }, [value, isLongText]);
+
     return (
         <div className="chat-input-wrapper" style={style}>
             {!isLongText ? (
@@ -60,7 +67,7 @@ const ChatInput = ({ style, openOptions }) => {
                         placeholder="Задай любой вопрос..."
                         value={value}
                         onChange={handleChange}
-                        rows={4}
+                        rows={1}
                     />
                     <button className="options-btn" onClick={openOptions}>+</button>
                     <button className="send-btn">↑</button>

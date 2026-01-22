@@ -60,7 +60,7 @@ const ChatInput = ({ style, openOptions, isOptions }) => {
                     <button className="send-btn">↑</button>
                 </>
             ) : (
-                <>
+                <div className="textarea-wrapper-div">
                     <textarea
                         ref={textareaRef}
                         className="chat-textarea"
@@ -69,9 +69,11 @@ const ChatInput = ({ style, openOptions, isOptions }) => {
                         onChange={handleChange}
                         rows={1}
                     />
-                    <button className="options-btn" onClick={openOptions}>{isOptions ? "✕" :"+"}</button>
-                    <button className="send-btn">↑</button>
-                </>
+                    <div className="chats-btn">
+                        <button className="options-btn" onClick={openOptions}>{isOptions ? "✕" :"+"}</button>
+                        <button className="send-btn">↑</button>
+                    </div>
+                </div>
             )}
         </div>
     );

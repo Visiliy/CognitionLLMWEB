@@ -77,3 +77,14 @@
 .chat-input::placeholder {
     color: white;
 }
+
+.textarea-wrapper-div {
+    display: grid;
+    width: 100%;
+    gap: 5px;
+}
+
+.chats-btn {
+    display: flex;
+    justify-content: space-between;
+}

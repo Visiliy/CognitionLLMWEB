@@ -1,0 +1,39 @@
+.fast-options-wrapper {
+    color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 50%;
+    max-height: 30%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.chats-name {
+    padding: 2px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    width: fit-content;
+}
+
+.chats-name:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.fast-options-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+.fast-options-wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.fast-options-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: white;
+}
+

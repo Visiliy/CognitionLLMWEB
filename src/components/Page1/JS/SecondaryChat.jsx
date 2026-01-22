@@ -5,10 +5,28 @@ import FastOptions from "./FastOptions";
 const SecondaryChat = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isFastOptions, setIsFastOptions] = useState(false);
     const chatRef = useRef(null);
 
+    const openFastOptions = () => {
+        setIsFastOptions(!isFastOptions);
+    }
+
     const chats_name = [
-        "Исследования в области искуссвенного интеллекта"
+        "Исследования в области искуссвенного интеллекта",
+        "Математика",
+        "физика",
+        "Разговоры о важном",
+        "Билет в будущее",
+        "Право",
+        "Галя",
+        "Большие вызовы",
+        "Высший пилотаж",
+        "Школа",
+        "Садик",
+        "Университет",
+        "Работа",
+
     ]
 
     useEffect(() => {
@@ -50,11 +68,13 @@ const SecondaryChat = () => {
                 >
                     <button className="secondary-chat-close" onClick={closeChat}>✕</button>
                     <div className="chat-text"></div>
-                    <FastOptions chats_name={chats_name}/>
+                    {
+                        isFastOptions && <FastOptions chats_name={chats_name}/>
+                    }
                     <div className="secondary-textareas">
                         <textarea className="secondary-chat-textarea" placeholder="Задай вопрос..." />
                         <div className="secondary-buttons-below">
-                            <button className="secondary-options-btn">+</button>
+                            <button className="secondary-options-btn" onClick={openFastOptions}>+</button>
                             <button className="secondary-send-btn">↑</button>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import "../UX/ChatInput.css";
 import { useRef, useState, useEffect } from 'react';
 
-const ChatInput = ({ style, openOptions }) => {
+const ChatInput = ({ style, openOptions, isOptions }) => {
     const inputRef = useRef(null);
     const textareaRef = useRef(null);
     const [value, setValue] = useState('');
@@ -48,7 +48,7 @@ const ChatInput = ({ style, openOptions }) => {
         <div className="chat-input-wrapper" style={style}>
             {!isLongText ? (
                 <>
-                    <button className="options-btn" onClick={openOptions}>+</button>
+                    <button className="options-btn" onClick={openOptions}>{isOptions ? "✕" :"+"}</button>
                     <input
                         ref={inputRef}
                         className="chat-input"
@@ -69,7 +69,7 @@ const ChatInput = ({ style, openOptions }) => {
                         onChange={handleChange}
                         rows={1}
                     />
-                    <button className="options-btn" onClick={openOptions}>+</button>
+                    <button className="options-btn" onClick={openOptions}>{isOptions ? "✕" :"+"}</button>
                     <button className="send-btn">↑</button>
                 </>
             )}

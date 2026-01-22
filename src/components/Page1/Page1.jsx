@@ -55,7 +55,7 @@ const Page1 = () => {
                     {
                         isOptions && <Options />
                     }
-                    <ChatInput style={inputStyle} openOptions={openOptions}/>
+                    <ChatInput style={inputStyle} openOptions={openOptions} isOptions={isOptions}/>
                     <Modes modes={datacloud.modes_array}/>
                 </div>
                 <SecondaryChat />

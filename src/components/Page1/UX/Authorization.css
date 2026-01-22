@@ -1,0 +1,16 @@
+.authorization-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    border: 1px solid #555;
+    user-select: none;
+    background: url("src/assets/e14968ec-22c0-4b7b-8715-9fdc17729834.png");
+    transform: translate(-50%, -50%);
+}
+
+.enter-window p {
+    font-size: 25px;
+}

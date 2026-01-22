@@ -1,8 +1,8 @@
 import "../UX/EnterBtn.css";
 
-const EnterBtn = () => {
+const EnterBtn = ({ openAutForm }) => {
     return (
-        <button className="enter-btn">Войти</button>
+        <button onClick={openAutForm} className="enter-btn">Войти</button>
     );
 }
 

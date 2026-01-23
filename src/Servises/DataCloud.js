@@ -19,6 +19,7 @@ class DataCloud {
             mode_text: "Построение эффективных сценариев для решения любых задач"
         }
     ];
+    base_url = "https://";
 }
 
 export default DataCloud;

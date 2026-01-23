@@ -64,7 +64,9 @@ const Page1 = () => {
                             isOptions && <Options />
                         }
                         <ChatInput style={inputStyle} openOptions={openOptions} isOptions={isOptions}/>
-                        <Modes modes={datacloud.modes_array}/>
+                        {
+                            window.innerWidth > 468 ? <Modes modes={datacloud.modes_array}/> : <></>
+                        }
                     </div>
                     <SecondaryChat />
                 </div> : <Authorization />

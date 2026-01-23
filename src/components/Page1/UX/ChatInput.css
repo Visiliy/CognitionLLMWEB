@@ -88,3 +88,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 468px) {
+    .chat-textarea {
+        max-height: 100px;
+    }
+}

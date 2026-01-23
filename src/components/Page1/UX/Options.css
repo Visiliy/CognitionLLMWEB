@@ -1,12 +1,12 @@
 .options-wrapper {
-    position: absolute;
+    width: fit-content;
     color: white;
     user-select: none;
     background-color: #333;
     padding: 10px;
     border-radius: 30px;
     border: 1px solid #555;
-    top: -12%;
+    margin-bottom: 5px;
 }
 
 .options-ul {

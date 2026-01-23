@@ -13,6 +13,31 @@
     font-size: 27px;
 }
 
+.new-options-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #555;
+    background: url("src/assets/e14968ec-22c0-4b7b-8715-9fdc17729834.png");
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-left: 50%;
+    width: fit-content;
+    transform: translateX(-50%);
+}
+
+.file-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    gap: 4px;
+    padding: 8px;
+    background: black;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
 @media (max-width: 468px) {
     .main-text {
         font-size: 14px;

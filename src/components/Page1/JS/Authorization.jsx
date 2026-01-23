@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../UX/Authorization.css";
 import DataCloud from "../../../Servises/DataCloud";
+import AuthManager from "../../../Servises/AuthorizationAPI";
 
 const Authorization = () => {
     const [isRegWindow, setIsOpenRegWindow] = useState(false);
